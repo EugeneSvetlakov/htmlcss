@@ -1,0 +1,121 @@
+body{
+    background-color: #f8f8f8;
+    font-size: 14pt;
+    margin: 10px;
+}
+.menu {
+    font-size: 1.5rem;
+}
+.menu ul, .menu li {
+    list-style-type: none;
+    list-style-image: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 5px 10px;
+    margin: 0 5px 0 0;
+
+}
+.menu li{
+    background-color: #008000;
+    border-radius: 5px;
+
+}
+.menu a{
+    list-style-type: none;
+    list-style-image: none;
+    text-decoration: none;
+    color: white;
+
+}
+main{
+    border-top: 1px black solid;
+    border-bottom: 1px black solid;
+    margin: 5px 0 5px 0;
+}
+h1{
+    text-align: center;
+}
+footer{
+    text-align: center;
+    color: gray;
+    padding: 5px;
+}
+h3{
+    color: black;
+    font-size: 1.28rem;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+.txtsmall{
+    color: #707070;
+    font-size: 1rem;
+    font-style: italic;
+    line-height: 16px;
+}
+.txtfull{
+    color: #484343;
+    font-size: 1.14rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.txtcharact ul {
+    display: list-item;
+    list-style-image: url(img/check.png);
+    color: #008000;
+}
+.txtcharact span{
+    color: black;
+    
+}
+.form_item {
+    display: flex;
+    flex-direction: column;
+}
+.addres ul{
+    margin: 10px 0;
+    padding-inline-start: 0;
+}
+.addres li{
+    list-style-type: none;
+    
+}
+.form_item{
+    font-size: 1.2rem;
+}
+.form_item textarea {
+    height: 5rem;
+}
+.form_item input,.form_item textarea {
+    width: 30rem;
+    color: rgb(61, 61, 63);
+    font-style: italic;
+    font-weight: 200;
+    font-size: 1.2rem;
+}
+div.l_item{
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.item{
+    display: flex;
+    flex-flow: column;
+    margin: 15px;
+    align-items: center;
+}
+.preimg{
+    padding: 5px;
+    margin: 0;
+    width: 550px;
+    height: 348px;
+    background-color: #008000;
+}
+.imgb{
+    background-color: #fff;
+    margin: 0;
+    width: 550px;
+    height: 348px;
+}
