@@ -29,6 +29,8 @@ header img{
 .menu li{
     background-color: #008000;
     border-radius: 5px;
+    -moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Chrome */
     list-style-type: none;
     list-style-image: none;
     padding: 5px 10px;
@@ -113,11 +115,19 @@ h3{
     height: 5rem;
 }
 .form_item input,.form_item textarea {
+    display: block;
     width: 30rem;
     color: rgb(61, 61, 63);
     font-style: italic;
     font-weight: 200;
     font-size: 1.2rem;
+    border-radius: 5px;
+    -moz-border-radius:5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari, Chrome */
+
+}
+.form_item input, .form_item textarea {
+  text-transform: capitalize;
 }
 div.l_item{
     display: flex;
@@ -131,16 +141,17 @@ div.l_item{
     margin: 15px;
     align-items: center;
 }
-.preimg{
-    padding: 5px;
-    margin: 0;
-    width: 550px;
-    height: 348px;
-    background-color: #008000;
+.lage_img{
+    outline: 5px solid red;
 }
-.imgb{
-    background-color: #fff;
-    margin: 0;
-    width: 550px;
-    height: 348px;
+.lage_img:hover{
+    outline-style: none;
+}
+.txtfull::first-letter, .txtsmall::first-letter{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 2rem;
+}
+
+.tab1 tr:first-child td{
+    height: 50px;
 }
