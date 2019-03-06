@@ -3,28 +3,31 @@ body{
     font-size: 14pt;
     margin: 10px;
 }
+.container{
+    width: 770px;
+    margin: 0 auto;
+}
 header{
-    display: -webkit-flex; 
-    -webkit-flex-direction: row;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 10px;
-    margin: 0 5px 0 0;
+    padding-top:120px;
+    box-sizing: border-box;
+    height: 226px;
+    position: relative;
+    background-image: url(img/header.jpg);
+}
+.logo{
+    float: left;
+    margin-top: 10px;
+    margin-left: 35px;
+}
+.logo img{
+    height: 60px;
+    width: auto;
 }
 .menu {
     font-size: 1.5rem;
-    display: -webkit-flex; 
-    -webkit-flex-direction: row;
-    display: flex;
-    flex-direction: row;
-    
 }
-header img{
-    height: 60px;
-    width: auto;
+header ul{
+    float: right;
 }
 .menu li{
     background-color: #008000;
@@ -35,6 +38,7 @@ header img{
     list-style-image: none;
     padding: 5px 10px;
     margin: 0 5px 0 0;
+    float: left;
 }
 .menu li:hover{
     background-color: #609b60;
@@ -55,15 +59,40 @@ h1{
     text-align: center;
 }
 footer{
-    text-align: center;
-    color: gray;
-    padding: 5px;
+    height: 100px;
+    text-align: right;
+    color: white;
+    background-color: darkgray;
+    padding-right:30px;
+    padding-top: 30px;
+    box-sizing: border-box;
 }
 h3{
     color: black;
     font-size: 1.28rem;
     font-weight: 400;
     background-color: #eaeaea;
+}
+.item_info{
+    display: inline-block;
+}
+.item_info > a{
+float: left;
+margin-right: 16px;
+}
+.item_info input[type="button"]{
+    width:120px;
+    height:40px;
+    font-size: 1.2rem;
+    background: #008800;
+    color: white;
+    float: inline-end;
+}
+.item_info input[type="button"]:hover{
+    background: #00CC00;
+}
+.item_info input[type="button"]:active{
+    background: #008888;
 }
 .txtsmall{
     color: #707070;
